@@ -11,6 +11,9 @@ app.use(cors()); //for cross origin  files
 
 //ROUTES
 app.use("/auth", require("./routes/userAuth"));
+app.get('/', (request, response) => {
+    response.json({ info: 'Node.js, Express, and Postgres API' })
+  })
 
 //SERVER PORT
 app.listen(PORT, () => {
