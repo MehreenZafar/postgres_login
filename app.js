@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 
 //CONSTANTS
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 
 //MIDDLEWARES
 app.use(express.json()); //to return files as json
